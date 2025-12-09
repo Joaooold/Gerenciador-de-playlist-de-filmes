@@ -1,44 +1,78 @@
 :root {
-    --primary-color: #29335c;
-    --light-primary: #9ac4f8;
-    --lightest-color: #e9ebd5;
-    --secundary-color: #774936;
-    --light-secundary: #c08972;
+  --primary-color: #29335c;
+  --light-primary: #3f4f8d;
+  --lightest-color: #e9ebd5;
+  --secundary-color: #774936;
+  --light-secundary: #c08972;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.1rem 1rem;
-    background-color: var(--primary-color);
-    color: var(--lightest-color);
-    font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--lightest-color);
+  font-family: sans-serif;
 }
 
 .search-conteiner {
-    display: flex;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  width: 50%;
 }
 
 header > h2 > i {
-    margin-right: .3rem;
+  margin-right: 0.3rem;
 }
 
 .movie-name-wrapper {
-    width: 65%;
+  width: 65%;
+  display: flex;
+  align-items: center;
 }
 .movie-year-wrapper {
-    width: 30%;
+  width: 30%;
+  display: flex;
+  align-items: center;
 }
 
-search-button {
+#search-button {
     width: 5%;
+    all: unset;
+    border: 1px solid var(--lightest-color);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#search-button:focus, #search-button:hover {
+    background-color: var(--light-primary);
+}
+
+.movie-year-wrapper > input {
+    max-width: 5rem;
+}
+
+.movie-name-wrapper > input {
+    width: 100%;
+}
+
+.movie-name-wrapper > input,
+.movie-year-wrapper > input {
+    margin: 0 0.4rem;
+    border-radius: 0.4rem;
+    padding: 0.2rem 0.3rem;
+    font-weight: bold;
+}
+
+.movie-name-wrapper > label,
+.movie-year-wrapper > label {
+    font-weight: bold;
 }
