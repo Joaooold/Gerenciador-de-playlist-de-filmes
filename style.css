@@ -26,6 +26,7 @@ header {
   display: flex;
   align-items: center;
   width: 50%;
+  justify-content: flex-end;
 }
 
 header > h2 > i {
@@ -38,7 +39,7 @@ header > h2 > i {
   align-items: center;
 }
 .movie-year-wrapper {
-  width: 30%;
+  
   display: flex;
   align-items: center;
 }
