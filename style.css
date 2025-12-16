@@ -12,6 +12,13 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  font-family: sans-serif;
+  flex-flow: column;
+  min-height: 100dvh;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -19,7 +26,7 @@ header {
   padding: 1.1rem 1rem;
   background-color: var(--primary-color);
   color: var(--lightest-color);
-  font-family: sans-serif;
+  
 }
 
 .search-conteiner {
@@ -76,4 +83,12 @@ header > h2 > i {
 .movie-name-wrapper > label,
 .movie-year-wrapper > label {
     font-weight: bold;
+}
+
+main {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--primary-color);
+  background-color: var(--lightest-color);
+  flex-grow: 1;
 }

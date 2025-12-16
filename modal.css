@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #29335c;
+  --light-primary: #3f4f8d;
+  --lightest-color: #e9ebd5;
+  --secundary-color: #774936;
+  --light-secundary: #c08972;
+}
+
+#modal-overlay {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--light-primary);
+    z-index: 666;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+#modal-conteiner {
+    z-index: 1;
+    background-color: var(--lightest-color);
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
