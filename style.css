@@ -28,6 +28,10 @@ header {
   color: var(--lightest-color);
   
 }
+button {
+  all:unset;
+  cursor: pointer;
+}
 
 .search-conteiner {
   display: flex;
@@ -52,12 +56,9 @@ header > h2 > i {
 }
 
 #search-button {
-    width: 5%;
-    all: unset;
     border: 1px solid var(--lightest-color);
     border-radius: 10px;
     padding: 5px;
-    cursor: pointer;
 }
 
 #search-button:focus, #search-button:hover {
