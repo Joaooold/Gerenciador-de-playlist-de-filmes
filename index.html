@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="src/notie-master/dist/notie.min.css">
     <title>Lista de filmes para assistir</title>
   </head>
   <body>
@@ -26,40 +27,17 @@
     </header>
     <main>
       <h2>Comece agora a sua lista de filmes!</h2>
-      <section id="movie-list"></section>
+      <section id="movie-list">
+        
+      </section>
       <article id="modal-overlay" class="overlay">
         <section id="modal-background"></section>
-        <section id="modal-conteiner">
-          <h2 id="movie-title">Harry Potter - 2011</h2>
-          <section id="modal-body">
-            <img
-              id="movie-poster"
-              src="https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg"
-              alt="poster do filme"
-            />
-            <div id="movie-info">
-              <h3 id="movie-plot">
-                Harry, Ron and Hermione set out on a quest to eliminate the remaining horcruxes. On the other hand, the
-                students and teachers must unite to defend Hogwarts against Lord Voldemort and his army.
-              </h3>
-              <div id="movie-cast">
-                <h4>Elenco:</h4>
-                <h5>Daniel Radcliffe, Emma Watson, Rupert Grint</h5>
-              </div>
-              <div id="movie-genre">
-                <h4>Gênero:</h4>
-                <h5>Adventure, Family, Fantasy</h5>
-              </div>
-            </div>
-          </section>
-          <section id="movie-footer">
-            <button id="add-to-list">Adicionar a lista</button>
-          </section>
-        </section>
+        <section id="modal-conteiner"></section>
       </article>
     </main>
-    <script src="key.js"></script>
     <script src="script.js"></script>
     <script src="modal.js"></script>
+    <script src="key.js"></script>
+    <script src="src/notie-master/dist/notie.min.js"></script>
   </body>
 </html>

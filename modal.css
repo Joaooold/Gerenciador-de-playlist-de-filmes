@@ -3,7 +3,7 @@
   --light-primary: #3f4f8d;
   --lightest-color: #e9ebd5;
   --secundary-color: #774936;
-  --light-secundary: #c08972;
+  --light-secundary: #b97e64;
 }
 
 #modal-overlay {
@@ -75,6 +75,7 @@
     font-weight: bold;
     transition: ease-in .1s;
     box-shadow: 1px 1px 10px #0000008c;
+    text-align: center;
 }
 
 #add-to-list:focus, #add-to-list:hover {
