@@ -44,12 +44,24 @@ function addToList(movieObject) {
   movieList.push(movieObject);
 }
 
+function isMovieAlreadyOnList(id) {
+  function DoesThisIdBelongToTheMovie(movieObject) {
+    return movieObject.imdbID === id;
+  }
+  return Boolean(movieList.find(DoesThisIdBelongToTheMovie));
+}
+
 function updateUI(movieObject) {
   movieListConteiner.innerHTML += `
-      <article>
+      <article id="movie-card-${movieObject.imdbID}">
         <img src="${movieObject.Poster}" alt="Poster do filme ${movieObject.Title}">
-        <button class="remove-button"><i class="bi bi-trash"></i> Remover</button>
+        <button class="remove-button" onclick="{removeMovieFromList('${movieObject.imdbID}')}"><i class="bi bi-trash"></i> Remover</button>
       </article>`;
+}
+
+function removeMovieFromList(id) {
+  movieList = movieList.filter((movie) => movie.imdbID !== id);
+  document.getElementById(`movie-card-${id}`).remove();
 }
 
 searchButton.addEventListener("click", searchButtonClickHandler);

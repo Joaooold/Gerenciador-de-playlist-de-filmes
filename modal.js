@@ -12,9 +12,14 @@ function closeModal() {
 }
 
 function addCurrentMovieToList() {
+  if (isMovieAlreadyOnList(currentMovie.imdbID)) {
+    notie.alert({ type: "error", text: "Este filme ja estar na lista!" })
+    closeModal();
+    return;
+  }
   addToList(currentMovie);
   updateUI(currentMovie);
-  closeModal()
+  closeModal();
 }
 function createModal(data) {
   currentMovie = data;
